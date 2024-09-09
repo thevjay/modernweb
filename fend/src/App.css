@@ -1,0 +1,56 @@
+/* write your css here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body{
+    overflow-x:hidden;
+}
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    background-color: ;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
+.formcon {
+    @apply flex justify-center items-center h-screen;
+    background-image: linear-gradient(to bottom, #f3f4f6, #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
